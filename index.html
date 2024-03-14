@@ -10,10 +10,10 @@
 		<link rel="manifest" href="/site.webmanifest" />
 		<title>Dan Volosikov Software Engineer</title>
 		
-		<link rel="modulepreload" href="/app/immutable/entry/start.BerJRsX1.js">
-		<link rel="modulepreload" href="/app/immutable/chunks/entry.C-atmHEt.js">
+		<link rel="modulepreload" href="/app/immutable/entry/start.Cx_Sdn_z.js">
+		<link rel="modulepreload" href="/app/immutable/chunks/entry.Bg0yEoLR.js">
 		<link rel="modulepreload" href="/app/immutable/chunks/runtime.JKBC_p3L.js">
-		<link rel="modulepreload" href="/app/immutable/entry/app.B4dow_GP.js">
+		<link rel="modulepreload" href="/app/immutable/entry/app.CsNUdOOT.js">
 		<link rel="modulepreload" href="/app/immutable/chunks/disclose-version.cxNbxpT-.js">
 		<link rel="modulepreload" href="/app/immutable/chunks/main-client.VeMasCMx.js">
 		<style>
@@ -155,21 +155,49 @@
 			.d-inline-block {
 				display: inline-block;
 			}
+			[class*='uk-animation-'] {
+				animation: 0.5s ease-out both;
+			}
+			.uk-animation-slide-bottom-medium {
+				animation-name: uk-fade, uk-slide-bottom-medium;
+			}
+			.uk-animation-fade {
+				animation-name: uk-fade;
+				animation-duration: 0.8s;
+				animation-timing-function: linear;
+			}
+			@keyframes uk-fade {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes uk-slide-bottom-medium {
+				0% {
+					transform: translateY(50px);
+				}
+				100% {
+					transform: translateY(0);
+				}
+			}
 		</style>
+		<script src="/uikit-core.min.js"></script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_c2lv9v = {
+					__sveltekit_161dhmj = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/app/immutable/entry/start.BerJRsX1.js"),
-						import("/app/immutable/entry/app.B4dow_GP.js")
+						import("/app/immutable/entry/start.Cx_Sdn_z.js"),
+						import("/app/immutable/entry/app.CsNUdOOT.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
