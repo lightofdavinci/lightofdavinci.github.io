@@ -10,10 +10,10 @@
 		<link rel="manifest" href="/site.webmanifest" />
 		<title>Dan Volosikov Software Engineer</title>
 		
-		<link rel="modulepreload" href="/app/immutable/entry/start.DRJ2ZXJu.js">
-		<link rel="modulepreload" href="/app/immutable/chunks/entry.DyGl0xGQ.js">
+		<link rel="modulepreload" href="/app/immutable/entry/start.BrOwLB_L.js">
+		<link rel="modulepreload" href="/app/immutable/chunks/entry.CfWk61Q9.js">
 		<link rel="modulepreload" href="/app/immutable/chunks/runtime.JKBC_p3L.js">
-		<link rel="modulepreload" href="/app/immutable/entry/app.BYwetbkN.js">
+		<link rel="modulepreload" href="/app/immutable/entry/app.4uRVFFq4.js">
 		<link rel="modulepreload" href="/app/immutable/chunks/disclose-version.Doo3UP_s.js">
 		<link rel="modulepreload" href="/app/immutable/chunks/main-client.Ds7uNWFd.js">
 		<style>
@@ -154,6 +154,30 @@
 			.d-inline-block {
 				display: inline-block;
 			}
+
+			.an-word {
+				position: absolute;
+				opacity: 0;
+			}
+			.an-letter {
+				display: inline-block;
+				position: relative;
+				float: left;
+				transform: translateZ(25px);
+				transform-origin: 50% 50% 25px;
+			}
+			.an-letter.out {
+				transform: rotateX(90deg);
+				transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+			}
+			.an-letter.behind {
+				transform: rotateX(-90deg);
+			}
+			.an-letter.in {
+				transform: rotateX(0deg);
+				transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			}
+
 			[class*='uk-animation-'] {
 				animation: 0.5s ease-out both;
 			}
@@ -188,15 +212,15 @@
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_12yb80p = {
+					__sveltekit_t2phzs = {
 						base: ""
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/app/immutable/entry/start.DRJ2ZXJu.js"),
-						import("/app/immutable/entry/app.BYwetbkN.js")
+						import("/app/immutable/entry/start.BrOwLB_L.js"),
+						import("/app/immutable/entry/app.4uRVFFq4.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
